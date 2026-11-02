@@ -150,6 +150,7 @@ button:focus-visible, a:focus-visible {
 .section-heading { max-width: 820px; }
 .section-heading h2 {
   margin: 16px 0;
+  font-family: Inter, Arial, sans-serif;
   font-size: 32px;
   font-weight: 500;
   line-height: 1.2;
@@ -221,11 +222,13 @@ button:focus-visible, a:focus-visible {
 .artifact-grid h3 { font-family: Inter, Arial, sans-serif; font-size: 16px; font-weight: 600; }
 .artifact-grid p { font-size: 14px; line-height: 1.5; }
 .stem-exchange {
+  color: var(--ink);
   border: 1px solid var(--line);
   border-radius: var(--semantic-borderRadius-container-web);
   background: var(--semantic-color-neutral-surface);
   box-shadow: none;
 }
+.stem-exchange span:not(.exchange-mark) { color: var(--muted); font-size: 12px; letter-spacing: .04em; }
 .exchange-mark { color: var(--semantic-color-neutral-onSurfacePrimary); }
 
 .metrics-section { border-top: 1px solid var(--line); }
@@ -239,6 +242,7 @@ button:focus-visible, a:focus-visible {
 .timeline-stage-labels div { border-color: var(--line); }
 .timeline-stage-labels span { color: var(--muted); }
 .metric-row { border-color: var(--line); }
+.metric-copy { background: var(--semantic-color-neutral-surface); }
 .metric-copy strong { color: var(--ink); }
 .metric-row--blue .metric-copy strong,
 .metric-row--red .metric-copy strong,
