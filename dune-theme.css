@@ -1,0 +1,31 @@
+/* Standalone preview mapping. Replace with Allegro's generated Dune tokens when available.
+   Names are verified against the connected Dune DS. Values here are visual approximations. */
+:root[data-brand="dune"][data-theme="light"] {
+  --semantic-color-neutral-background: #f4f5f7;
+  --semantic-color-neutral-surface: #ffffff;
+  --semantic-color-neutral-surfaceMuted: #eceef1;
+  --semantic-color-neutral-onSurfacePrimary: #202124;
+  --semantic-color-neutral-onSurfaceSecondary: #565b63;
+  --semantic-color-neutral-border: #7f8790;
+  --semantic-color-neutral-borderMuted: #d8dce1;
+  --semantic-color-accent-primary: #ff5a00;
+  --semantic-color-accent-onPrimary: #ffffff;
+  --semantic-color-accent-tertiary: #6b37a5;
+  --semantic-color-accent-tertiaryVisited: #633988;
+  --semantic-color-decoration-primary: #a7c8e8;
+  --semantic-color-decoration-secondary: #c2b7de;
+  --semantic-color-decoration-tertiary: #e6d5a0;
+  --semantic-borderRadius-container-web: 16px;
+  --semantic-borderRadius-action-web: 8px;
+}
+
+/* Local definitions mirror the public Dune text-style measurements returned by the DS. */
+.text-web-display-l { font: 300 48px/58px Inter, Arial, sans-serif; }
+.text-web-display-m { font: 500 32px/38px Inter, Arial, sans-serif; }
+.text-web-headline-l { font: 500 24px/28px Inter, Arial, sans-serif; }
+.text-web-headline-m { font: 500 20px/24px Inter, Arial, sans-serif; }
+.text-web-title-l { font: 600 16px/20px Inter, Arial, sans-serif; }
+.text-web-title-m { font: 600 14px/18px Inter, Arial, sans-serif; }
+.text-web-body-l { font: 400 16px/24px Inter, Arial, sans-serif; }
+.text-web-body-m { font: 400 14px/20px Inter, Arial, sans-serif; }
+.text-web-caption-m { font: 400 12px/16px Inter, Arial, sans-serif; }
