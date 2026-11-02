@@ -159,6 +159,7 @@ button:focus-visible, a:focus-visible {
 .section-heading > p:last-child { color: var(--muted); font-size: 16px; line-height: 1.55; }
 .flower-layout { gap: 48px; align-items: start; }
 .flower-canvas { margin-top: 48px; }
+.stem { height: 47%; }
 .petal { filter: none; transition: transform 150ms ease; }
 .petal:hover, .petal[aria-pressed=true] { filter: none; transform: translate(-50%, -50%) scale(1.015); }
 .petal-shape-fill { transition: fill 150ms ease, stroke-width 150ms ease; }
