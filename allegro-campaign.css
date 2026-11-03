@@ -1,0 +1,173 @@
+/* Campaign art direction layered over the Dune-based controls and typography. */
+:root {
+  --campaign-navy: #071940;
+  --campaign-blue: #123773;
+  --campaign-cyan: #86ddf6;
+  --campaign-ice: #f4f8fd;
+  --campaign-orange: var(--semantic-color-accent-primary);
+}
+
+body, main { background: #fff; }
+.site-header {
+  background: var(--campaign-navy);
+  border-bottom-color: rgba(255, 255, 255, .16);
+}
+.brand, .site-header nav a { color: #fff; }
+.site-header nav a:hover { color: var(--campaign-cyan); }
+.site-header a:focus-visible { outline-color: var(--campaign-cyan); }
+
+.section-heading h2 {
+  color: var(--campaign-navy);
+  font-weight: 700;
+  letter-spacing: -.035em;
+}
+.section-heading .eyebrow,
+.example-intro .eyebrow,
+.principles-section .eyebrow { color: var(--campaign-orange); }
+.section-heading > p:last-child { max-width: 780px; font-size: 17px; }
+
+.flower-section {
+  width: 100%;
+  padding: 112px max(24px, calc((100vw - 1248px) / 2)) 128px;
+  background: var(--campaign-ice);
+}
+.flower-section .section-heading { max-width: 880px; }
+.flower-section .section-heading h2 { max-width: 780px; font-size: clamp(38px, 4vw, 54px); }
+.flower-layout { max-width: 1248px; margin-inline: auto; }
+.petal-detail {
+  background: var(--campaign-navy);
+  border: 0;
+  color: #fff;
+  box-shadow: 0 24px 60px rgba(7, 25, 64, .16);
+}
+.petal-detail h3 { color: #fff; font-size: clamp(28px, 3vw, 38px); }
+.petal-detail .detail-question { color: #e1ebff; }
+.petal-detail dt, .petal-detail .detail-index { color: var(--campaign-cyan); }
+.petal-detail dd { color: #fff; }
+.petal-detail dl > div { border-color: rgba(255, 255, 255, .19); }
+.petal-detail .decision-list span,
+.petal-detail .core-artifact-list span {
+  background: #18376e;
+  color: #fff;
+}
+
+.example-section {
+  margin-top: 0;
+  margin-bottom: 104px;
+  background: #fff0e5;
+  border-radius: 24px;
+}
+.example-intro h2 {
+  color: var(--campaign-navy);
+  font-size: clamp(32px, 3vw, 44px);
+  font-weight: 700;
+  letter-spacing: -.035em;
+}
+.example-intro p:last-child { color: #4d5770; }
+.example-steps li { border-color: rgba(7, 25, 64, .18); }
+.example-steps strong { color: var(--campaign-navy); font-weight: 700; }
+.example-steps strong::before {
+  counter-increment: example;
+  content: counter(example, decimal-leading-zero) " / ";
+  color: var(--campaign-orange);
+}
+.example-steps span { color: #4d5770; }
+
+.core-section { border-top: 0; padding-top: 24px; }
+.core-section .section-heading h2,
+.principles-section .section-heading h2 { font-size: clamp(36px, 3.8vw, 50px); }
+.artifact-grid { gap: 20px; counter-reset: artifact; }
+.artifact-grid article {
+  min-height: 170px;
+  padding: 22px 12px 20px 0;
+  border: 0;
+  border-top: 2px solid var(--campaign-blue);
+  border-radius: 0;
+  background: transparent;
+}
+.artifact-grid article::before {
+  display: block;
+  margin-bottom: 20px;
+  counter-increment: artifact;
+  content: counter(artifact, decimal-leading-zero);
+  color: var(--campaign-orange);
+  font-size: 13px;
+  font-weight: 700;
+}
+.artifact-grid h3 { color: var(--campaign-navy); font-size: 18px; }
+.stem-exchange {
+  padding: 32px 40px;
+  border: 0;
+  background: var(--campaign-navy);
+  color: #fff;
+}
+.stem-exchange span:not(.exchange-mark) { color: var(--campaign-cyan); }
+.stem-exchange .exchange-mark { color: var(--campaign-orange); }
+
+.metrics-section {
+  width: 100%;
+  padding: 112px max(24px, calc((100vw - 1248px) / 2)) 128px;
+  border-top: 0;
+  background: var(--campaign-navy);
+}
+.metrics-section .section-heading .eyebrow { color: var(--campaign-cyan); }
+.metrics-section .section-heading h2 {
+  max-width: 850px;
+  color: #fff;
+  font-size: clamp(36px, 3.8vw, 50px);
+}
+.metrics-section .section-heading > p:last-child { color: #d7e3fa; }
+.metrics-section .timeline-scroll {
+  margin-top: 48px;
+  padding: 32px;
+  border-radius: 24px;
+  background: #fff;
+}
+
+.principles-section { border-top: 0; background: #fff; }
+.principles-grid { gap: 20px; }
+.principles-grid article {
+  padding: 22px 8px 22px 0;
+  border: 0;
+  border-top: 2px solid #cdd8e8;
+  border-radius: 0;
+  background: transparent;
+}
+.principles-grid article > span { color: var(--campaign-orange); font-weight: 700; }
+.principles-grid h3 { color: var(--campaign-navy); font-size: 18px; }
+
+.playbook-section {
+  margin-bottom: 96px;
+  padding: 48px 56px;
+  border-radius: 24px;
+  background: var(--campaign-blue);
+  color: #fff;
+}
+.playbook-section .eyebrow { color: var(--campaign-cyan); }
+.playbook-section h2 { color: #fff; font-size: clamp(28px, 3vw, 38px); }
+.playbook-section p:last-child { color: #dce8ff; }
+.playbook-status {
+  padding: 10px 14px;
+  border: 1px solid rgba(255, 255, 255, .36);
+  border-radius: 999px;
+  color: #fff;
+}
+footer { background: var(--campaign-navy); color: #c8d6ee; border-top: 0; }
+
+@media (max-width: 1023px) {
+  .flower-section, .metrics-section { padding-inline: 24px; }
+}
+@media (max-width: 639px) {
+  .flower-section, .metrics-section { width: 100%; padding: 72px 16px 88px; }
+  .flower-section .section-heading h2,
+  .metrics-section .section-heading h2 { font-size: 32px; }
+  .flower-section .section-heading > p:last-child,
+  .metrics-section .section-heading > p:last-child { font-size: 15px; }
+  .petal-detail h3 { font-size: 26px; }
+  .example-section { margin-bottom: 72px; }
+  .example-steps strong::before { display: inline; }
+  .core-section { padding-top: 0; }
+  .artifact-grid article { min-height: 0; padding: 18px 4px 20px 0; }
+  .metrics-section .timeline-scroll { margin: 32px 0 0; padding: 16px; }
+  .playbook-section { padding: 32px 24px; }
+}
